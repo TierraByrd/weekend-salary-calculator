@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Salary Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
-  <main>
-    <h2>Add Employee</h2>
+    <h1 id="title">Salary Calculator</h1>
+    <h2>Add Employees</h2>
+    <form id="employeeForm">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="number" id="idNumber" placeholder="ID Number">
+        <input type="text" id="jobTitle" placeholder="Job Title">
+        <input type="number" id="annualSalary" placeholder="Annual Salary">
+        <button type="submit">Submit</button>
+    </form>
     <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID Number</th>
+                <th>Job Title</th>
+                <th>Annual Salary</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="Table">
+        </tbody>
+    </table>
+    <h3>Total Monthly Cost: <span id="TotalMonthCost">0.00</span></h3>
+    <script src="./scripts.js"></script>
 </body>
-</html>
